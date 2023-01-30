@@ -5,7 +5,8 @@
             :header="`${acao.nome} (Pago: ${ this.$options.filters.dinheiro(acao.preco) }| Atual: ${this.$options.filters.dinheiro(precoAtual)}| Qtde: ${ acao.quantidade })`"
             header-text-variant="white"
             header-class="text-center"
-            header-tag="header"> 
+            header-tag="header"
+            body-tag="cartao-portfolio-body"> 
               <b-card-text class="portfolio-subtitulo">Quantidade</b-card-text>
               <div class="cartao-actions">
                   <input
@@ -93,14 +94,17 @@ export default {
   flex-wrap: wrap;
 }
 
-.cartao-portfolio {
-  width: 27vw;
-  height: 50px
+.cartao-portfolio-body {
+  width: 25vw;
+  height: 12vh;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .cartao-portfolio header{
   font-size: 0.85rem;
   height: 45px;
+  width: 25vw;
   background-color: #0F4CB8;
 }
 

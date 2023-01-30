@@ -5,7 +5,8 @@
             :header="`${acao.nome} (Preço: ${ this.$options.filters.dinheiro(acao.preco) })`"
             header-text-variant="white"
             header-class="text-center"
-            header-tag="header">
+            header-tag="header"
+            body-class="cartao-stocks-body">
                 <b-card-text class="stocks-subtitulo">Quantidade</b-card-text>
                 <div class="cartao-actions">
                     <input
@@ -82,14 +83,16 @@ export default {
     flex-wrap: wrap;
 }
 
-.cartao-stocks {
-    width: 27vw;
-    height: 50px
+.cartao-stocks header{
+    height: 45px;
+    background-color: #197F50;
 }
 
-.cartao-stocks header{
-  height: 45px;
-  background-color: #197F50;
+.cartao-stocks-body {
+    width: 25vw;
+    height: 12vh;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .stocks-subtitulo {
